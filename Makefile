@@ -18,3 +18,13 @@ createdbmysql:
 
 dropdbmysql:
 	docker exec -it mysql mysql -uroot -psecret -e "drop database tutorials;"
+
+#In case of using oracle database:
+
+# sqlplus / as sysdba
+# create user dongocanh96 identified by ngocanh8;
+# grant CONNECT, RESOURCE, DBA TO dongocanh96;
+# grant CREATE SESSION, ALTER SESSION, CREATE DATABASE LINK, CREATE MATERIALIZED VIEW, CREATE PROCEDURE, \
+ CREATE PUBLIC SYNONYM, CREATE ROLE, CREATE SEQUENCE, CREATE SYNONYM, CREATE TABLE, CREATE TRIGGER, CREATE TYPE, \
+ CREATE VIEW, UNLIMITED TABLESPACE to dongocanh96;
+
