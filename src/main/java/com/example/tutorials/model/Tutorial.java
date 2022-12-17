@@ -1,7 +1,9 @@
 package com.example.tutorials.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 @Entity
 @Table(name = "tutorials")
 public class Tutorial {
