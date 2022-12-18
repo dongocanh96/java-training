@@ -12,7 +12,7 @@ import com.example.tutorials.repository.TutorialDetailsRepository;
 import com.example.tutorials.repository.TutorialRepository;
 
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api")
 public class TutorialDetailsController {
